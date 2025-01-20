@@ -9,7 +9,7 @@ html{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Noto Kufi Arabic", serif;
 }
 body{
   direction: rtl;
@@ -65,12 +65,16 @@ nav .btn div{
 }
 .card{
   width: 90%;
-  background-color: rgba(0, 0, 0, .1) ;
+  background: rgba(0, 0, 0, .1) ;
   margin: 10px auto ;
   backdrop-filter: blur(8px);
-  
   border-radius: 10px;
   padding: 15px 20px;
+}
+@media (min-width: 1200px) {
+  .card{
+    max-width: 1200px;
+  }
 }
 .card .c-img{
   width: 100px;
@@ -88,6 +92,7 @@ nav .btn div{
   padding: 20px;
   margin: 15px 0;
   border-radius: 10px;
+  box-shadow: 0 0 8px grey;
 }
 .card .blog .warning{
   background: #CAF59B;
@@ -101,13 +106,15 @@ nav .btn div{
   text-align: center;
 }
 .card .blog .c-video{
-  width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
   overflow: hidden;
   background: teal;
   border-radius: 10px;
   height: 575px;
 }
 .card .blog .c-video video{
+  
   width: 100%;
   height: 100%;
 }
@@ -122,14 +129,22 @@ nav .btn div{
 .card .blog .c-admin img{
   width:  100%;
 }
+#h3{
+  text-align: center;
+  text-decoration: underline
+}
+#admin{
+  padding: 10px
+}
 .card .blog .w-admin{
   background: #51D07E;
   overflow: hidden;
   border-radius: 10px;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px auto;
   color: #fff;
   font-weight: bolder;
+  max-width: 350px;
 }
 .card .blog .w-admin a{
   color: #fff;
@@ -144,4 +159,72 @@ footer{
   text-align: center;
   background: var(--bg);
   line-height: 70px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+/* ============================style home============= */
+.menu{
+  width: 350px;
+  height: calc(100vh - 80px);
+  background: var(--bg);
+  position: fixed;
+  z-index: 101;
+  box-shadow: 0 0 12px;
+  top: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  right: -350px;
+  transition: .3s all ease;
+}
+.menu.active{
+  right: 0px;
+}
+.menu ul li{
+  list-style: none;
+  text-align: center;
+  background: #17111f;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.menu ul li a{
+  color: #fff;
+  padding: 0 100px;
+  text-decoration: none;
+}
+#h1{
+  text-align: center;
+  color: #444;
+}
+.card .blog p{
+  color: #444;
+  padding: 20px;
+}
+.index .wrap {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--bg-light);
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+  padding: 20px;
+}
+.index .wrap .box {
+  width: 350px;
+  height: 210px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+}
+.index .wrap .box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.index .wrap .text{
+  max-width: 600px;
+  padding: 20px;
+  color: #444;
 }
