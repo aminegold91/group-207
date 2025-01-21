@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="icon" href="logo.png" />
+  <title>media bayer - شراء الوسائط</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="menu">
+    <ul>
+      <li>
+        <a href="index.html">الصفحة الرئسية</a>
+      </li>
+      <li>
+        <a href="learn.html">محضرات</a>
+      </li>
+      <li>
+        <a href="quiz.html">اختبار</a>
+      </li>
+      <li>
+        <a href="contact.html">توصل معنا</a>
+      </li>
+    </ul>
+  </div>
+  <div class="motif"></div>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="" />
+    </div>
+    <div class="title"> Goupe -207- </div>
+    <div class="btn">
+      <div class="bar"></div>
+      
+    </div>
+  </nav>
+  <div class="card">
+    <h1>اختبار شراء الوسائط</h1>
+    <form id="quiz-form">
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. ما هو الهدف الرئيسي من شراء الوسائط (Media Buying)؟</p>
+        <hr />
+        <br />
+        <label><input type="radio" name="q1" value="a"> تحسين جودة المنتج</label><br>
+        <label><input type="radio" name="q1" value="b"> ضمان ظهور الإعلانات في الأماكن الصحيحة</label><br>
+        <label><input type="radio" name="q1" value="c"> إنشاء محتوى إبداعي للإعلانات</label>
+      </div>
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. أي من الخيارات التالية يُعتبر أداة لإدارة إعلانات Google؟</p>
+        <hr />
+        <br />
+        <label><input type="radio" name="q2" value="a"> Facebook Ads Manager</label><br>
+        <label><input type="radio" name="q2" value="b"> Google Analytics</label><br>
+        <label><input type="radio" name="q2" value="c"> Google Ads Manager</label>
+      </div>
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. ماذا يعني المصطلح CPM؟</p>
+        <hr />
+        <br />
+        <label><input type="radio" name="q3" value="a"> تكلفة النقرة الواحدة</label><br>
+        <label><input type="radio" name="q3" value="b"> تكلفة الألف ظهور</label><br>
+        <label><input type="radio" name="q3" value="c"> تكلفة التحويل</label>
+      </div>
+      <button type="button" id="submit-btn">إرسال الإجابات</button>
+      <h2 id="result">
+        
+      </h2>
+    </form>
+  </div>
+
+  
+ 
+    
+  <footer >
+    <p>
+      حقوق الطبع محفوضة ©
+      2025
+      <a href="#" onclick="copy_right()">
+        سياسة الخصوية
+      </a>
+    </p>
+  </footer>
+
+  <script src='main.js'></script>
+  <script>
+    function copy_right(){
+      alert('"يُسمح بالنسخ والتوزيع مع الإشارة إلى المصدر".');
+    }
+  </script>
+</body>
+</html>
