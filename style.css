@@ -48,20 +48,48 @@ nav .title{
   font-weight: bolder;
   font-size: 18px;
 }
-nav  .btn{
+nav .btn{
   width: 55px;
   height: 55px;
   background: #222;
   border-radius: 50%;
   display: flex;
-  flex-wrap: wrap;
-  padding: 16px;
+  align-items: center;
+  justify-content: center;
 }
 nav .btn div{
-  width: 45px;
+  width: 30px;
   height: 3px;
   border-radius: 8px;
   background: var(--bg);
+  transition: .3s;
+}
+
+nav .btn div:before{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 8px;
+  background: var(--bg);
+  transform: translatey(-8px);
+  transition: .3s;
+}
+nav .btn.active div:before{
+  transform: rotate(45deg);
+}
+nav .btn div:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 8px;
+  background: var(--bg);
+  transform: translatey(8px);
+  transition: .3s;
+}
+nav .btn.active div:after {
+  transform: rotate(-45deg);
 }
 .card{
   width: 90%;
