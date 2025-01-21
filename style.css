@@ -57,7 +57,7 @@ nav .btn{
   align-items: center;
   justify-content: center;
 }
-nav .btn div{
+nav .btn .bar{
   width: 30px;
   height: 3px;
   border-radius: 8px;
@@ -65,7 +65,7 @@ nav .btn div{
   transition: .3s;
 }
 
-nav .btn div:before{
+nav .btn .bar:before{
   content: "";
   position: absolute;
   width: 30px;
@@ -75,10 +75,10 @@ nav .btn div:before{
   transform: translatey(-8px);
   transition: .3s;
 }
-nav .btn.active div:before{
+nav .btn.active .bar:before{
   transform: rotate(45deg);
 }
-nav .btn div:after {
+nav .btn .bar:after {
   content: "";
   position: absolute;
   width: 30px;
@@ -88,7 +88,7 @@ nav .btn div:after {
   transform: translatey(8px);
   transition: .3s;
 }
-nav .btn.active div:after {
+nav .btn.active .bar:after {
   transform: rotate(-45deg);
 }
 .card{
