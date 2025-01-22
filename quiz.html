@@ -43,46 +43,120 @@
       
     </div>
   </nav>
-  <div class="card">
-    <h1>اختبار شراء الوسائط</h1>
-    <form id="quiz-form">
-      <!-- Question 1 -->
-      <div class="question">
-        <p>1. ما هو الهدف الرئيسي من شراء الوسائط (Media Buying)؟</p>
-        <hr />
-        <br />
-        <label><input type="radio" name="q1" value="a"> تحسين جودة المنتج</label><br>
-        <label><input type="radio" name="q1" value="b"> ضمان ظهور الإعلانات في الأماكن الصحيحة</label><br>
-        <label><input type="radio" name="q1" value="c"> إنشاء محتوى إبداعي للإعلانات</label>
-      </div>
-      <!-- Question 2 -->
-      <div class="question">
-        <p>2. أي من الخيارات التالية يُعتبر أداة لإدارة إعلانات Google؟</p>
-        <hr />
-        <br />
-        <label><input type="radio" name="q2" value="a"> Facebook Ads Manager</label><br>
-        <label><input type="radio" name="q2" value="b"> Google Analytics</label><br>
-        <label><input type="radio" name="q2" value="c"> Google Ads Manager</label>
-      </div>
-      <!-- Question 3 -->
-      <div class="question">
-        <p>3. ماذا يعني المصطلح CPM؟</p>
-        <hr />
-        <br />
-        <label><input type="radio" name="q3" value="a"> تكلفة النقرة الواحدة</label><br>
-        <label><input type="radio" name="q3" value="b"> تكلفة الألف ظهور</label><br>
-        <label><input type="radio" name="q3" value="c"> تكلفة التحويل</label>
-      </div>
-      <button type="button" id="submit-btn">إرسال الإجابات</button>
-      <h2 id="result">
-        
-      </h2>
-    </form>
-  </div>
-
   
- 
-    
+      <div class="card">
+      <div class="quiz-container">
+    <h1>اختبار Media Buyer</h1>
+    <form id="quiz-form">
+      <!-- الأسئلة -->
+      <div class="question">
+        <p>1. ما هو دور Media Buyer الأساسي؟</p>
+        <hr />
+        <br />
+        <label><input type="radio" name="q1" value="wrong"> إنشاء محتوى إبداعي</label><br>
+        <label><input type="radio" name="q1" value="2"> شراء المساحات الإعلانية</label><br>
+        <label><input type="radio" name="q1" value="wrong"> تحسين محركات البحث</label><br>
+        <label><input type="radio" name="q1" value="wrong"> تطوير الإعلانات النصية</label>
+      </div>
+
+      <div class="question">
+        <p>2. ما الأداة التي تُستخدم لتتبع أداء الإعلانات؟</p>
+        <hr />
+<br />
+        <label><input type="radio" name="q2" value="correct"> Google Analytics</label><br>
+        <label><input type="radio" name="q2" value="wrong"> Photoshop</label><br>
+        <label><input type="radio" name="q2" value="wrong"> Canva</label><br>
+        <label><input type="radio" name="q2" value="wrong"> Visual Studio Code</label>
+      </div>
+
+      <div class="question">
+        <p>3. ما هي المنصة الأكثر استخدامًا للإعلانات الرقمية؟</p>
+        <hr />
+<br />
+        <label><input type="radio" name="q3" value="wrong"> LinkedIn</label><br>
+        <label><input type="radio" name="q3" value="correct"> Facebook Ads</label><br>
+        <label><input type="radio" name="q3" value="wrong"> Pinterest Ads</label><br>
+        <label><input type="radio" name="q3" value="wrong"> Reddit Ads</label>
+      </div>
+
+      <div class="question">
+        <p>4. أي من التالي يُعتبر هدفًا لحملة إعلانية؟</p>
+        <hr />
+<br />
+        <label><input type="radio" name="q4" value="wrong"> إنشاء موقع ويب</label><br>
+        <label><input type="radio" name="q4" value="wrong"> تصميم شعار</label><br>
+        <label><input type="radio" name="q4" value="correct"> زيادة عدد النقرات</label><br>
+        <label><input type="radio" name="q4" value="wrong"> تحسين تجربة المستخدم</label>
+      </div>
+
+      <div class="question">
+        <p>5. ما هي صيغة الإعلان الشائعة في Google Ads؟</p>
+        <hr />
+<br />
+        <label><input type="radio" name="q5" value="correct"> PPC (الدفع لكل نقرة)</label><br>
+        <label><input type="radio" name="q5" value="wrong"> B2B</label><br>
+        <label><input type="radio" name="q5" value="wrong"> SEO</label><br>
+        <label><input type="radio" name="q5" value="wrong"> HTML</label>
+      </div>
+
+      <div class="question">
+        <p>6. أي من التالي يُعتبر قناة إعلانية تقليدية؟</p>
+        <hr />
+<br />
+        <label><input type="radio" name="q6" value="wrong"> TikTok Ads</label><br>
+        <label><input type="radio" name="q6" value="correct"> التلفزيون</label><br>
+        <label><input type="radio" name="q6" value="wrong"> Snapchat Ads</label><br>
+        <label><input type="radio" name="q6" value="wrong"> Google Ads</label>
+      </div>
+
+      <div class="question">
+        <p>7. ما هو أفضل وقت لتحديد جمهور الإعلان؟</p>
+        <hr />
+<br />
+        <label><input type="radio" name="q7" value="wrong"> بعد إطلاق الإعلان</label><br>
+        <label><input type="radio" name="q7" value="correct"> قبل إطلاق الإعلان</label><br>
+        <label><input type="radio" name="q7" value="wrong"> أثناء الحملة</label><br>
+        <label><input type="radio" name="q7" value="wrong"> ليس له أهمية</label>
+      </div>
+
+      <div class="question">
+        <p>8. ما هو المقصود بـ ROI في مجال الإعلانات؟</p>
+        <hr />
+<br />
+        <label><input type="radio" name="q8" value="correct"> العائد على الاستثمار</label><br>
+        <label><input type="radio" name="q8" value="wrong"> تكلفة النقرة</label><br>
+        <label><input type="radio" name="q8" value="wrong"> سعر الإعلان</label><br>
+        <label><input type="radio" name="q8" value="wrong"> تصميم المحتوى</label>
+      </div>
+
+      <div class="question">
+        <p>9. ما هي منصة الإعلانات التي تناسب المنتجات المهنية (B2B)؟</p>
+        <hr />
+<br />
+        <label><input type="radio" name="q9" value="wrong"> Instagram Ads</label><br>
+        <label><input type="radio" name="q9" value="correct"> LinkedIn Ads</label><br>
+        <label><input type="radio" name="q9" value="wrong"> TikTok Ads</label><br>
+        <label><input type="radio" name="q9" value="wrong"> Pinterest Ads</label>
+      </div>
+
+      <div class="question">
+        <p>10. ماذا تعني CTR في التسويق الرقمي؟</p>
+        <label><input type="radio" name="q10" value="correct"> معدل النقر إلى الظهور</label><br>
+        <label><input type="radio" name="q10" value="wrong"> تكاليف النقرة</label><br>
+        <label><input type="radio" name="q10" value="wrong"> جمهور الحملة</label><br>
+        <label><input type="radio" name="q10" value="wrong"> مدة الإعلان</label>
+      </div>
+
+      <!-- أضف المزيد من الأسئلة (من 11 إلى 20) بنفس التنسيق -->
+
+
+      <button type="button" id="submit">إرسال الإجابات</button>
+      
+
+    </form>
+    <p id="result"></p>
+  </div>
+  </div>
   <footer >
     <p>
       حقوق الطبع محفوضة ©
