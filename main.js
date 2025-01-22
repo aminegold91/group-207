@@ -31,7 +31,7 @@ btn.addEventListener('click', ()=>{
    result.style.cssText= `
    display: flex;
    `;
-   window.scrollTo(0,1650);
+   window.scrollTo(0,3000);
     result.textContent = `لقد حصلت على ${score} من ${Object.keys(correctAnswers).length}.`;
   });
 
