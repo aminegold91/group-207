@@ -24,13 +24,14 @@ html{
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: none;
   
 }
 .import video{
   width: 500px;
   transform: rotate(90deg);
   border-radius: 10px;
+  display: none;
 }
 
 
