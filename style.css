@@ -11,6 +11,31 @@ html{
   box-sizing: border-box;
   font-family: "Noto Kufi Arabic", serif;
 }
+
+
+.import{
+  position: fixed;
+  width: 500px;
+  height: 600px;
+  background: var(--bg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+}
+.import video{
+  width: 500px;
+  transform: rotate(90deg);
+  border-radius: 10px;
+}
+
+
+
+
 body{
   direction: rtl;
 }
