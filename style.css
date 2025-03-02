@@ -34,7 +34,23 @@ html{
   display: none;
 }
 
-
+/* style size banner 728*90 */
+#ads{
+  width: 728px;
+  background-color: red;
+  height: 90px;
+  margin: 15px auto;
+  overflow: hidden;
+}
+#ads img{
+  width: 100%;
+}
+@media (max-width: 949px){
+  
+  #ads{
+    display: none;
+  }
+}
 
 
 body{
